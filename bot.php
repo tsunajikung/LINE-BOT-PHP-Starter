@@ -12,7 +12,20 @@ if (!is_null($events['events'])) {
 		// Reply only when message sent is in 'text' format
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
-			$text = $event['message']['text'];
+			//$text = $event['message']['text'];
+			
+			if($event['message']['text']=='สวัสดี'){
+				$text = 'สวัสดีจ้า';
+			}else if($event['message']['text']=='เออ'){
+				$text = 'เพื่อนเล่นหรอ';
+			}else if($event['message']['text']=='ชื่ออะไร'){
+				$text = 'I AM GROOT !!!';
+			}else if($event['message']['text']=='ทำอะไรอยู่'){
+				$text = 'ไม่บอก';
+			}else{
+				$text = 'อือ';
+			}
+			
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
