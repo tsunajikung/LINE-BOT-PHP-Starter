@@ -59,5 +59,5 @@ if (!is_null($events['events'])) {
 	}
 }
 //print "REPLY TOKEN = "$replyToken;
-print "REPLY TOKEN = "$reply_token_echo;
+print "REPLY TOKEN = ".$reply_token_echo;
 echo "OK";
