@@ -58,6 +58,6 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-console.log($replyToken);
-console.log($reply_token_echo);
+print(reply token = $replyToken);
+print(reply token = $reply_token_echo);
 echo "OK";
