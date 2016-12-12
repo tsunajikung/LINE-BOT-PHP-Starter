@@ -58,5 +58,5 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo reply_token_echo;
+echo $reply_token_echo;
 echo "OK";
