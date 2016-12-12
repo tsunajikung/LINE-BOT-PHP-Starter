@@ -1,6 +1,5 @@
 <?php
 $access_token = '2SqwVhx4/ZmAqzL+ojMgLnwXf9RHgwCyTCaTiJBgKoPtxE5/O6QXNCJKlkeeyAmGDmdEUeKI51FDQ5mhd/T5iOiRA39zgHcZolgJcOt07PcAwVofZrokUxMcgaMMHPLdm73mYGMLbBNmqxaQTMvRBwdB04t89/1O/w1cDnyilFU=';
-$reply_token_echo;
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
@@ -59,5 +58,5 @@ if (!is_null($events['events'])) {
 	}
 }
 //print "REPLY TOKEN = "$replyToken;
-print "REPLY TOKEN = ".$reply_token_echo;
+print "REPLY TOKEN = ".$access_token;
 echo "OK";
